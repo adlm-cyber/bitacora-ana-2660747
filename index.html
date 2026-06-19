@@ -31,10 +31,8 @@
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
-            
             animation: carruselIguanas 15s infinite; 
         }
-
        
         @keyframes carruselIguanas {
             0%, 25% {
@@ -53,29 +51,24 @@
 
         header {
             text-align: center;
-            padding: 40px 0;
+            padding: 40px 20px;
             color: white;
             border-radius: 10px;
             margin-bottom: 30px;
-            /* Aplicamos la nueva animación sincronizada con el fondo */
             animation: cambiarVerdes 15s infinite;
         }
 
-               @keyframes cambiarVerdes {
+        @keyframes cambiarVerdes {
             0%, 25% {
-                /* Verde esmeralda oscuro (combina con la primera iguana) */
                 background: linear-gradient(135deg, #10b981 0%, #065f46 100%);
             }
             33%, 58% {
-                /* Verde oliva / musgo (para encajar con el tono del ave) */
                 background: linear-gradient(135deg, #84cc16 0%, #3f6212 100%);
             }
             66%, 91% {
-                /* Verde azulado / menta profundo (para la tercera imagen) */
                 background: linear-gradient(135deg, #0d9488 0%, #115e59 100%);
             }
             100% {
-                /* Regresa al verde original */
                 background: linear-gradient(135deg, #10b981 0%, #065f46 100%);
             }
         }
@@ -89,6 +82,7 @@
         header p {
             font-size: 1.2rem; 
             opacity: 0.9;
+            margin-bottom: 5px;
         }
 
         .container {
@@ -96,8 +90,55 @@
             margin: 0 auto;
         }
 
+        
+        .intro-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            border-left: 5px solid #10b981;
+        }
+
+        .intro-card h2 {
+            color: #0f766e;
+            margin-bottom: 15px;
+        }
+
+        .intro-card p {
+            line-height: 1.6;
+            font-size: 1.1rem;
+            color: #374151;
+        }
+
+        /* Estilo Destacado para la Cita */
+        .cita-destacada {
+            background: #f0fdf4;
+            border-left: 4px solid #16a34a;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+        }
+
+        .cita-texto {
+            font-size: 1.2rem;
+            color: #14532d;
+            font-weight: 600;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .cita-fuente {
+            font-size: 0.9rem;
+            color: #166534;
+            font-style: normal;
+            display: block;
+            text-align: right;
+        }
+
         .clase-card {
-            background: white;
+            background: rgba(255, 255, 255, 0.95);
             border-radius: 10px;
             padding: 25px;
             margin-bottom: 30px;
@@ -119,35 +160,21 @@
             line-height: 1.6;
             margin-bottom: 20px;
         }
-
        
+        
         .pdf-container {
-
-            width: 10%;
-
-            height: 20px;
-
+            width: 100%;
+            height: 500px;
             border-radius: 8px;
-
             overflow: hidden;
-
             border: 1px solid #e2e8f0;
-
             margin-bottom: 15px;
-
         }
-
-
 
         .pdf-container embed {
-
             width: 100%;
-
             height: 100%;
-
         }
-
-
 
         .link-abrir {
             text-align: right;
@@ -171,322 +198,150 @@
         <header>
             <h1>Mi Bitácora de Aprendizaje</h1>
             <p>¡Bienvenidos! Este es mi registro de clases, apuntes y presentaciones</p>
-            <p>Ana Daniela Lievano Muñoz, 2660747 - Desarrollo de software</p>
+            <p>Ana Daniela Lievano Muñoz - Desarrollo de Software</p>
         </header>
 
+        
+        <section class="intro-card">
+            <h2>Sobre mí 👋</h2>
+            <p>
+                ¡Hola! Mi nombre es <strong>Ana Lievano</strong>, tengo 20 años y actualmente divido mi tiempo entre dos de mis grandes pasiones: trabajar y estudiar. Me apasiona el desarrollo de software y, fuera de las pantallas, tengo un cariño enorme por la naturaleza y los animales, especialmente por las iguanas, los pájaros y los gatos. He creado este espacio para compartirles mi portafolio académico y mi proceso de crecimiento. ¡Gracias por pasar a mirar!
+            </p>
+
+            
+            <blockquote class="cita-destacada">
+                <span class="cita-texto">"No basta con estar ocupado; los clones de hormigas también lo están. La pregunta es: ¿en qué estamos ocupados?"</span>
+                <span class="cita-fuente">— <strong>Henry David Thoreau</strong> (Cartas a Harrison Blake, 16 de noviembre de 1857)</span>
+            </blockquote>
+        </section>
        
         <!--CLASE 1 -->
-
         <article class="clase-card">
-
             <h2>Clase 1: Arquitectura Emocional </h2>
-
             <div class="meta-info">Fecha:  25 de febrero, 2026 | Asignatura: INSERCION A LA VIDA UNIVERSITARIA</div>
-
             
-
             <div class="resumen">
-
                 <p><strong>Contexto de clase:</strong> Identificar la diferencia entre Emoción (reacción al ritmo/clima) y Sentimiento (procesamiento de la letra/mensaje) en una pieza de audio (canción). </p>
-
             </div>
 
-            <div class="CLASE1.pdf">
-
-   
-
+            <div class="pdf-container">
                 <embed src="CLASE1.pdf" type="application/pdf">
-
             </div>
-
             
-
             <div class="link-abrir">
-
                 <p>Lea full por acá: <a href="CLASE1.pdf" target="_blank">Abrir PDF en pantalla completa ↗</a></p>
-
             </div>
-
         </article>
-
-
-
-
-
-
-
-
-
-
 
         <!-- CLASE 2 -->
-
         <article class="clase-card">
-
             <h2>Clase 2: Debug de Carga (Estrés): </h2>
-
             <div class="meta-info">Fecha: 04 de Marzo, 2026 | Asignatura: INSERCION A LA VIDA UNIVERSITARIA</div>
-
             
-
             <div class="resumen">
-
-                <p><strong>Contexto de clase:</strong> En La pasada sesión aprendimos a declarar nuestras variables emocionales. Ahora, es momento de hablar de un factor crítico que puede afectar el rendimiento de cualquier sistema: la sobrecarga. </p>
-
+                <p><strong>Contexto de clase:</strong> En la pasada sesión aprendimos a declarar nuestras variables emocionales. Ahora, es momento de hablar de un factor crítico que puede afectar el rendimiento de cualquier sistema: la sobrecarga. </p>
             </div>
 
-
-
-            
-
-            <div class="CLASE2.pdf">
-
-        
-
+            <div class="pdf-container">
                 <embed src="CLASE2.pdf" type="application/pdf">
-
             </div>
-
-
 
             <div class="link-abrir">
-
                 <p>Lea full por acá: <a href="CLASE2.pdf" target="_blank">Abrir PDF en pantalla completa ↗</a></p>
-
             </div>
-
         </article>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         <!--CLASE 3 -->
-
         <article class="clase-card">
-
             <h2>Clase 3: Runtime and scheduling- Tiempo de ejecución y programación: </h2>
-
             <div class="meta-info">Fecha: 11 de Marzo, 2026 | Asignatura: INSERCION A LA VIDA UNIVERSITARIA</div>
-
             
-
             <div class="resumen">
-
-                <p><strong>Contexto de clase:</strong> aplicamos la teoría a la implementación real en nuestra vida de estudiante.  En términos de ingeniería, esto no es solo un plan, es una "simulación de entorno real" con un ciclo de retroalimentación. </p>
-
+                <p><strong>Contexto de clase:</strong> Aplicamos la teoría a la implementación real en nuestra vida de estudiante. En términos de ingeniería, esto no es solo un plan, es una "simulación de entorno real" con un ciclo de retroalimentación. </p>
             </div>
 
-
-
-            
-
-            <div class="CLASE3.pdf">
-
-        
-
+            <div class="pdf-container">
                 <embed src="CLASE3.pdf" type="application/pdf">
-
             </div>
 
-
-
             <div class="link-abrir">
-
                 <p>Lea full por acá: <a href="CLASE3.pdf" target="_blank">Abrir PDF en pantalla completa ↗</a></p>
-
             </div>
-
         </article>
 
-
-
-
-
-
-
-  <!--CLASE 4 -->
-
+        <!--CLASE 4 -->
         <article class="clase-card">
-
             <h2>Clase 4: Ecosistema Academico-Administrativo Univalluno: </h2>
-
             <div class="meta-info">Fecha: 23 de Marzo, 2026 | Asignatura: INSERCION A LA VIDA UNIVERSITARIA</div>
-
             
-
             <div class="resumen">
-
                 <p><strong>Contexto de clase:</strong> Entender las reglas técnicas y el futuro de su carrera. </p>
-
             </div>
 
-
-
-            
-
-            <div class="CLASE4.pdf">
-
-        
-
+            <div class="pdf-container">
                 <embed src="CLASE4.pdf" type="application/pdf">
-
             </div>
 
-
-
             <div class="link-abrir">
-
                 <p>Lea full por acá: <a href="CLASE4.pdf" target="_blank">Abrir PDF en pantalla completa ↗</a></p>
-
             </div>
-
         </article>
 
-
-
-<!--CLASE 5 -->
-
+        <!--CLASE 5 -->
         <article class="clase-card">
-
             <h2>Clase 5: Mi Lugar en el Sistema Univalluno </h2>
-
             <div class="meta-info">Fecha: 23 de Marzo, 2026 | Asignatura: INSERCION A LA VIDA UNIVERSITARIA</div>
-
             
-
             <div class="resumen">
-
                 <p><strong>Contexto de clase:</strong> Dimensiones de la Vida Universitaria. </p>
-
             </div>
 
-
-
-            
-
-            <div class="CLASE5.pdf">
-
-        
-
+            <div class="pdf-container">
                 <embed src="CLASE5.pdf" type="application/pdf">
-
             </div>
 
-
-
             <div class="link-abrir">
-
                 <p>Lea full por acá: <a href="CLASE5.pdf" target="_blank">Abrir PDF en pantalla completa ↗</a></p>
-
             </div>
-
         </article>
 
-
-
-
-<!--CLASE 6 -->
-
+        <!--CLASE 6 -->
         <article class="clase-card">
-
             <h2>Clase 6: La comunicación Institucional: </h2>
-
             <div class="meta-info">Fecha: 23 de Marzo, 2026 | Asignatura: INSERCION A LA VIDA UNIVERSITARIA</div>
-
             
-
             <div class="resumen">
-
                 <p><strong>Contexto de clase:</strong> Estructurar y redactar solicitudes, quejas o sugerencias formales dirigidas a instancias universitarias. </p>
-
             </div>
 
-
-
-            
-
-            <div class="CLASE6.pdf">
-
-        
-
+            <div class="pdf-container">
                 <embed src="CLASE6.pdf" type="application/pdf">
-
             </div>
 
-
-
             <div class="link-abrir">
-
                 <p>Lea full por acá: <a href="CLASE6.pdf" target="_blank">Abrir PDF en pantalla completa ↗</a></p>
-
             </div>
-
         </article>
 
-
-<!--REFLEXIÓN TOTAL -->
-
+        <!--REFLEXIÓN TOTAL -->
         <article class="clase-card">
-
             <h2>MI REFLEXIÓN TOTAL: </h2>
-
             <div class="meta-info">Fecha: 23 de Marzo, 2026 | Asignatura: INSERCION A LA VIDA UNIVERSITARIA</div>
-
             
-
             <div class="resumen">
-
                 <p><strong>Contexto:</strong> Acá está la reflexión de la clase!! </p>
-
             </div>
 
-
-
-            
-
-            <div class="REFLEXION TOTAL.pdf">
-
-        
-
+            <div class="pdf-container">
                 <embed src="REFLEXION TOTAL.pdf" type="application/pdf">
-
             </div>
-
-
 
             <div class="link-abrir">
-
                 <p>Lea full por acá: <a href="REFLEXION TOTAL.pdf" target="_blank">Abrir PDF en pantalla completa ↗</a></p>
-
             </div>
-
         </article>
-
-
-
- 
-
-
-
-
 
     </div>
 
-
-
 </body>
-
 </html>
